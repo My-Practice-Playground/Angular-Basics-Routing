@@ -15,7 +15,6 @@ import {AppRoutingModule} from "./app-routing.module";
     HomeComponent,
     CustomerComponent,
     OrderComponent
-
   ],
   imports: [
     BrowserModule,
