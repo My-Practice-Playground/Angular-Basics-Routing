@@ -8,13 +8,15 @@ import {FormsModule} from "@angular/forms";
 import { CustomerComponent } from './customer/customer.component';
 import { OrderComponent } from './order/order.component';
 import {AppRoutingModule} from "./app-routing.module";
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 
 @NgModule({ //module that registered components
   declarations: [
     AppComponent,
     HomeComponent,
     CustomerComponent,
-    OrderComponent
+    OrderComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
