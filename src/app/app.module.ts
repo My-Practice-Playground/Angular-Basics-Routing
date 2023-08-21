@@ -7,6 +7,7 @@ import {NgOptimizedImage} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import { CustomerComponent } from './customer/customer.component';
 import { OrderComponent } from './order/order.component';
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({ //module that registered components
   declarations: [
@@ -19,7 +20,8 @@ import { OrderComponent } from './order/order.component';
   imports: [
     BrowserModule,
     NgOptimizedImage,
-    FormsModule
+    FormsModule, //importing the module for [(ngModel)]
+    AppRoutingModule //importing the module
   ],
   providers: [],
   bootstrap: [AppComponent]
