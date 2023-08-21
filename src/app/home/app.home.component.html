@@ -1,13 +1,25 @@
 <h1>Home Component works</h1>
 
 <!-----------------------data binding-------------------->
+
 <!--//interpolation-->
 <h2>Hello I am {{name}} age is {{age}} </h2>
 
 <!--//property binding-->
 <!--<img [src]="image" [width]="width">-->
 
-<!--//event binding-->
+<!--//event binding in one way-->
 <input #myVar placeholder="type here" type="text"
        width="50px">
 <button (click)="printData(myVar.value)" type="button">click</button>
+<hr>
+
+
+<!--two way data binding-->
+<input
+  #myElement
+  type="input"
+  placeholder="Type here"
+  (keyup)="name=myElement.value">
+<hr>
+my name is  <strong>{{name}}</strong>
