@@ -3,14 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/app.home.component';
+import {NgOptimizedImage} from "@angular/common";
 
-@NgModule({
+@NgModule({ //module that registered components
   declarations: [
     AppComponent,
     HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
