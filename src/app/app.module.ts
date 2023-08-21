@@ -5,11 +5,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/app.home.component';
 import {NgOptimizedImage} from "@angular/common";
 import {FormsModule} from "@angular/forms";
+import { CustomerComponent } from './customer/customer.component';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({ //module that registered components
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CustomerComponent,
+    OrderComponent
 
   ],
   imports: [
