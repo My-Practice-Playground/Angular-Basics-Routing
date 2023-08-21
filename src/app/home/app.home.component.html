@@ -16,10 +16,11 @@
 
 
 <!--two way data binding-->
-<input
+<!--<input
   #myElement
-  type="input"
+  (keyup)="name=myElement.value"
   placeholder="Type here"
-  (keyup)="name=myElement.value">
+  type="input">-->
+<input [(ngModel)]="name" placeholder="type here" type="text"> <!--data binding using ngmodule(have to import FileModule in app.modules.ts)-->
 <hr>
-my name is  <strong>{{name}}</strong>
+<h2>My name is <strong>{{name}}</strong></h2>

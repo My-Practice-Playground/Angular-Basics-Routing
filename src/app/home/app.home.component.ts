@@ -15,4 +15,3 @@ export class HomeComponent {
     console.log(data)
   }
 }
-
