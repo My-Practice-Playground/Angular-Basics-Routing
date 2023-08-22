@@ -4,8 +4,10 @@
 
 <header>
   <button routerLink="/home" routerLinkActive="active" type="button">Home</button>
-  <button routerLink="/customer" routerLinkActive="active" type="button">Customer</button>
+  <button routerLink="/customer/{{value}}}" routerLinkActive="active" type="button">Customer</button>
   <button routerLink="/order" routerLinkActive="active" type="button">Order</button>
+
+  <input type="text" [(ngModel)]="value" placeholder="type here">
 </header>
 <hr>
 <router-outlet></router-outlet>
